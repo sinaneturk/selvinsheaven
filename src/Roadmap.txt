@@ -1,0 +1,7 @@
+1- Define The website
+2- Have a mockup of the finished product
+3- create database
+4- create backend
+5- create frontend
+6- upload site to live server
+7- share it on linkedIn using github account as well
