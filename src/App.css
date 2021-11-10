@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+
+.nav-link{
+  text-decoration: none;
+  width: 100px;
+  display: inline-block;
+  border-right: 1px solid;
+  color: gray;
+  padding: 6px;
+}
+
+.nav-link:last-child{
+  border-right: none;
+}
+
+.nav-link:hover{
+  color: #61dafb;
+  background-color: rosybrown;
+}
