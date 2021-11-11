@@ -1,4 +1,5 @@
 import {React ,Component} from 'react';
+import ReactPlayer from 'react-player';
 import './styles.home.scss';
 
 class Home extends Component {
@@ -7,7 +8,13 @@ class Home extends Component {
     }
 
     render(){
-        return <p className="red">Home</p>
+        return <div className="home">
+            <div className="intro-vid" >
+            <ReactPlayer
+                url="https://www.youtube.com/watch?v=ug50zmP9I7s"
+            />
+            </div>
+        </div>
     }
 }
 
