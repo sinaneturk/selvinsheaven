@@ -14,6 +14,7 @@ import {
   increaseCounter,
   decreaseCounter,
 } from "./redux/Counter/counter.actions"
+import Blog from './components/Blog/component.blog';
 
 class App extends Component {
 
@@ -32,12 +33,14 @@ class App extends Component {
             <Link className="nav-link" to= "" >Home</Link>
             <Link className="nav-link"  to= "about" >About</Link>
             <Link className="nav-link"  to= "volunteers" >Volunteers</Link>
+            <Link className="nav-link"  to= "blog" >Blog</Link>
             <Link className="nav-link"  to= "contact" >Contact</Link>
           </nav>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/volunteers" element={<Volunteer />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
