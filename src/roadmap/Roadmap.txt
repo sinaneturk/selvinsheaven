@@ -1,4 +1,5 @@
 1- Define The website
+    It is the farm's website to contact with the digital world and be able to manage volunteers
 2- Have a mockup of the finished product
 3- create database
 4- create backend

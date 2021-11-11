@@ -8,6 +8,13 @@ import About from './components/About/component.about';
 import Volunteer from './components/Volunteers/component.volunteers';
 import Contact from './components/Contact/component.contact';
 
+import { connect } from "react-redux"
+
+import {
+  increaseCounter,
+  decreaseCounter,
+} from "./redux/Counter/counter.actions"
+
 class App extends Component {
 
   constructor(props){
@@ -34,10 +41,30 @@ class App extends Component {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
+
+        <div>Count: {this.props.count}</div>
+
+        <button onClick={() => this.props.increaseCounter()}>Increase Count</button>
+
+        <button onClick={() => this.props.decreaseCounter()}>Decrease Count</button>
       </div>
     );
   }
 
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    count: state.counter.count,
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return {
+    increaseCounter: () => dispatch(increaseCounter()),
+
+    decreaseCounter: () => dispatch(decreaseCounter()),
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App)
