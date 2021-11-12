@@ -42,7 +42,6 @@
   text-decoration: none;
   width: 100px;
   display: inline-block;
-  border-right: 1px solid;
   color: gray;
   padding: 6px;
 }
@@ -51,7 +50,28 @@
   border-right: none;
 }
 
-.nav-link:hover{
-  color: #61dafb;
-  background-color: rosybrown;
+.nav-link:hover , .nav-link:active{
+  color: #80cd2b;
+  border-bottom:2px solid;
+}
+
+.logo-container{
+  width: 100px;
+}
+
+.logo{
+  width: 100%;
+}
+
+.header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+}
+
+.body-container{
+  margin: auto;
+  max-width: 1000px;
 }
