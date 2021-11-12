@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './farm-logo.jpg';
 import './App.css';
 import { Component } from 'react';
 
@@ -24,26 +24,33 @@ class App extends Component {
   }
 
   render(){
+    console.log('TR : ', window.location)
     return (
       <div className="App">
-        <h3>Selvin's Heaven</h3>
+        
+          <div className="body-container">
+            <div className="header-container">
+              <div className="logo-container">
+                <img className="logo" src = {logo} alt="Logo"/>
+              </div>
+              <nav>
+                <Link className="nav-link home" to= "" >Home</Link>
+                <Link className="nav-link about"  to= "about" >About</Link>
+                <Link className="nav-link volunteers"  to= "volunteers" >Volunteers</Link>
+                <Link className="nav-link blog"  to= "blog" >Blog</Link>
+                <Link className="nav-link contact"  to= "contact" >Contact</Link>
+              </nav>
+            </div>
 
-        <BrowserRouter>
-          <nav>
-            <Link className="nav-link" to= "" >Home</Link>
-            <Link className="nav-link"  to= "about" >About</Link>
-            <Link className="nav-link"  to= "volunteers" >Volunteers</Link>
-            <Link className="nav-link"  to= "blog" >Blog</Link>
-            <Link className="nav-link"  to= "contact" >Contact</Link>
-          </nav>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/volunteers" element={<Volunteer />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/volunteers" element={<Volunteer />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+      
 
         <div>Count: {this.props.count}</div>
 
