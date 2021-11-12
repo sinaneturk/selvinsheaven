@@ -24,7 +24,6 @@ class App extends Component {
   }
 
   render(){
-    console.log('TR : ', window.location)
     return (
       <div className="App">
         
