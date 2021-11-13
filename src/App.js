@@ -33,11 +33,11 @@ class App extends Component {
                 <img className="logo" src = {logo} alt="Logo"/>
               </div>
               <nav>
-                <Link className="nav-link home" to= "" >Home</Link>
-                <Link className="nav-link about"  to= "about" >About</Link>
-                <Link className="nav-link volunteers"  to= "volunteers" >Volunteers</Link>
-                <Link className="nav-link blog"  to= "blog" >Blog</Link>
-                <Link className="nav-link contact"  to= "contact" >Contact</Link>
+                <Link className="nav-link" to= "" >Home</Link>
+                <Link className="nav-link"  to= "about" >About</Link>
+                <Link className="nav-link"  to= "volunteers" >Volunteers</Link>
+                <Link className="nav-link"  to= "blog" >Blog</Link>
+                <Link className="nav-link"  to= "contact" >Contact</Link>
               </nav>
             </div>
 
@@ -51,11 +51,14 @@ class App extends Component {
           </div>
       
 
+        <div className="hidden">
         <div>Count: {this.props.count}</div>
 
         <button onClick={() => this.props.increaseCounter()}>Increase Count</button>
 
         <button onClick={() => this.props.decreaseCounter()}>Decrease Count</button>
+        </div>
+
       </div>
     );
   }

@@ -50,6 +50,9 @@
   border-right: none;
 }
 
+.nav-link{
+  border-bottom: 2px solid transparent;
+}
 .nav-link:hover , .nav-link:active{
   color: #80cd2b;
   border-bottom:2px solid;
@@ -69,9 +72,15 @@
   justify-content: space-between;
   align-items: center;
   padding: 7px 0;
+  border-bottom: 2px solid #80808073;
+  margin-bottom: 30px;
 }
 
 .body-container{
   margin: auto;
   max-width: 1000px;
+}
+
+.hidden {
+  display: none;
 }
