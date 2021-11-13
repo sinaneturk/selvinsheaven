@@ -1,7 +1,37 @@
 .home{
-    padding: 3px;
+   
     .intro-vid{
         padding: 3px;
     }
+ 
+    display: flex;
+    justify-content: space-between;
 }
 
+
+input.volunteer-btn {
+    padding: 16px;
+    border: none;
+    background-color: #cb74e7;
+    color: white;
+    width: 50%;
+    margin-left: 50%;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+p.motto {
+    color: gray;
+    text-align: justify;
+    padding-left: 15px;
+    margin-top: -5px;
+    text-indent: 30px;
+}
+
+.motto-n-btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
