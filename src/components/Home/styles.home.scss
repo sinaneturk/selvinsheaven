@@ -1,4 +1,4 @@
-.home{
+.home-intro{
    
     .intro-vid{
         padding: 3px;
@@ -34,4 +34,48 @@ p.motto {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.image-bg-container {
+    width: 33%;
+    height: 333px;
+    margin-bottom: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+}
+
+.from-instagram{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+p.section-header {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 15px;
+    border-bottom: 2px solid gray;
+    width: 33%;
+    padding-bottom: 2px;
+    color: gray;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.image-info {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+}
+
+p.likes {
+    font-size: 9px;
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding-top: 4px;
+    padding-left: 5px;
 }
